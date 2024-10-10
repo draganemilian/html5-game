@@ -1,35 +1,34 @@
 // Google Analytics Tracking
-var _gaq = _gaq || [];
-(function() {
-  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-16927549-1']);
-  _gaq.push(['_setDomainName', 'pubnub.com']);
-  _gaq.push(['_trackPageview']);
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+// var _gaq = _gaq || [];
+// (function() {
+//   var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+//   _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+//   _gaq.push(['_setAccount', 'UA-16927549-1']);
+//   _gaq.push(['_setDomainName', 'pubnub.com']);
+//   _gaq.push(['_trackPageview']);
+//   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+// })();
 
-
-
-if(window.location.hostname === 'www.pubnub.com' || window.location.hostname === 'pubnub.com' ){
-    window['CONFIG'] = {
-        'pardot_account_id': '29622',
-        'pardot_campaign_id': '22674'
-    };
-}
-else {
-    window['CONFIG'] = {
-        'pardot_account_id': '31022',
-        'pardot_campaign_id': '1932'
-    };
-
+if (
+  window.location.hostname === "www.pubnub.com" ||
+  window.location.hostname === "pubnub.com"
+) {
+  window["CONFIG"] = {
+    pardot_account_id: "29622",
+    pardot_campaign_id: "22674",
+  };
+} else {
+  window["CONFIG"] = {
+    pardot_account_id: "31022",
+    pardot_campaign_id: "1932",
+  };
 }
 
 // Pardot tracking
-piAId = CONFIG['pardot_account_id'];
-piCId = CONFIG['pardot_campaign_id'];
+piAId = CONFIG["pardot_account_id"];
+piCId = CONFIG["pardot_campaign_id"];
 
 /*
 var PongUtil =  {

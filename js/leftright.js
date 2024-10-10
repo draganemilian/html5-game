@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var pubnub = new PubNu({
-        publishKey: 'pub-c-242fbbf1-4cc6-4153-8f20-a671697f15ec',
-        subscribeKey: 'sub-c-2361676c-1e85-11e4-bbbf-02ee2ddab7fe'
+        publishKey: 'pub-c-81e5a2a2-7566-4369-90a1-9707e89b7686',
+        subscribeKey: 'sub-c-edbc1067-b152-41c9-98f0-86bc13379c69'
     });
 
     pubnub.addEventListener({
